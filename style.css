@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    /* border: .2px solid white; */
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #111111;
+}
+
+:root {
+    --dark-red: #C91B28;
+    --light-red: #EF4040;
+    --light-gray: #1E1E1E;
+    --dark-gray: #181818;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100px;
+    position: absolute;
+    left: -2.5rem;
+}
+
+.navbar {
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.nav-items {
+    display: flex;
+    gap: 4.2rem;
+}
+
+.nav-items a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 300ms ease-in-out;
+}
+
+.nav-items a:hover {
+    color: var(--light-red);
+}
+
+/* hero container  */
+.hero-container {
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-img {
+    width: 37rem;
+}
+
+.greetline {
+    color: var(--light-red);
+    font-size: 1.6rem;
+}
+
+.skill {
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+
+.hero-p {
+    font-size: 1.2rem;
+    padding-right: 0rem;
+    line-height: 1.3;
+}
+
+/* ***** button ***** */
+.btn {
+    background-color: var(--light-red);
+    font-size: 1rem;
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px #000;
+}
+
+/* hero button */
+.about-me-btn {
+    background-color: var(--dark-red);
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+
+/* ********** cards section ********** */
+/* card container  */
+.card-container {
+    padding: 5rem 0;
+    position: relative;
+}
+
+/* card container background  */
+.card-container::before {
+    content: '';
+    background-color: var(--dark-gray);
+    position: absolute;
+    left: -10rem;
+    top: 0;
+    height: 100%;
+    width: 65%;
+    z-index: -2;
+}
+
+/* general cards & card CSS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 22rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.card-heading {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.card-p {
+    font-size: 1.4rem;
+    line-height: 1.3;
+}
+
+/* know more link div  */
+.knowmore {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.knowmore-link a {
+    color: var(--dark-red);
+}
+
+
+/* experties card */
+.experties-card {
+    padding: 2.5rem;
+    background-color: var(--light-gray);
+}
+
+/* active card css  */
+.active-card {
+    background-color: var(--dark-red);
+}
+
+.active-card .knowmore-link a {
+    color: #fff;
+}
+
+.active-card .knowmore svg polygon {
+    fill: #fff;
+}
+
+/* ***** number card container *****  */
+
+/* for small num card */
+.num-cards {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.num-card {
+    height: 47%;
+    width: 100%;
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.num-card .heading {
+    font-size: 3rem;
+    color: var(--light-red);
+}
+
+.experience {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.num-heading {
+    color: var(--light-red);
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+/* for small card heading  */
+.num-card h3 {
+    font-weight: 400;
+}
+
+/* ********** featured project container ********** */
+.project-container{
+    margin: 3rem 0;
+}
+.projects-header {
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects-header h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.projects-header p {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+/* PROJECTS CARDS */
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card {
+    width: 45%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .7rem;
+    margin: 1rem;
+}
+
+.project-img {
+    width: 100%;
+    padding: 3rem 2rem;
+    background-color: var(--light-gray);
+}
+
+.card-3 {
+    padding: 1.7rem 2rem;
+}
+
+.project-title {
+    font-size: 2rem;
+}
+
+/* contact section  */
+.contact-container {
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    padding: 0 3rem;
+    margin: 5rem 0;
+    background-color: var(--light-gray);
+}
+
+.content-container {
+    width: 60%;
+}
+
+.contact-heading {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.content-container p {
+    font-size: 1.2rem;
+}
+
+.contact-btn {
+    display: inline-block;
+}
+
+
+/* ***** bottom nav *****  */
+.bottom-nav {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.bottom-nav-item {
+    display: inline;
+    margin: 2rem;
+}
+
+.bottom-nav-item a {
+    transition: color 300ms ease-in-out;
+}
+
+.bottom-nav-item a:hover {
+    color: var(--light-red);
+}
+
+footer {
+    height: 15vh;
+    padding: 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--light-gray);
+}
+
+.logo-bottom {
+    width: 120px;
+    position: absolute;
+    left: 9rem;
+}
+
+.social-media-icon {
+    margin: 1.5rem;
+}
+
+.social-media-icon img {
+    width: 30px;
+}
