@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     color: #fff;
-    border: .2px solid white;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -113,9 +112,13 @@ body {
     padding: 15px 40px;
     border: none;
     cursor: pointer;
+    transition: background-color .25s ease-in;
 }
 
 .btn:hover {
+    padding: 12px 37px;
+    border: 3px solid var(--light-red);
+    background-color: transparent;
     box-shadow: 0 0 15px #000;
 }
 
@@ -124,6 +127,10 @@ body {
     background-color: var(--dark-red);
     margin: 2rem 0;
     font-size: 1.2rem;
+}
+
+.about-me-btn:hover{
+    border-color: var(--dark-red);
 }
 
 /* ********** cards section ********** */
